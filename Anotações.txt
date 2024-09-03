@@ -1,0 +1,60 @@
+Rest:
+
+cliente-servidor
+stateless server
+cach
+interface uniforme
+Sistema em camadas
+código sob demanda (opcional) - Na prática o cliente
+
+coluna vertebral = HTTP
+
+request e response
+
+status codes
+
+100 - info (pouco usados)
+200 - sucesso - 200/1 (creada e ainda processada, add item a fila)/2/ 204 (no contente) = muito usado
+300 - redirecionamento
+400 - erro de cliente - 400 bad request (cliente manda req. para op para não existe, chamar num "Id" apagado) 401 - 
+500 - erro de server (internal server erro) genérico
+
+criar (post)
+	VIA url, header e body (preferencia)
+
+requisitar (get)
+	retorna xml, json. Via URL (PATH ou Query) e header único que não pode post
+
+utilizar (put)
+	modificar recursos (retorna geralmente o body de volta) - geralmente um 200
+
+delete (delete)
+
+recomendado não retornar nada, 204
+
+menos conhecidos 
+----------------
+	POUQUISSIMO USADOS
+
+PATCH - Updates parciais. Quando for muito oneroso enviar todo o objeto de 1x
+
+HEAD - semelhante a get, mas não retorna body
+
+TRACE - recupera o conteúdo de uma requisição para fase de desenvolvimento
+
+OPTIONS - verifica as requisições suportadas pela API
+
+CONNECT - Conexão entre o server e o cliente
+
+---------------
+
+	Modelo de maturidade
+
+Restfull - Estado mais alto do REST
+	04 Níveis de maturidade
+	
+00 - "pântano de XML" - Uma API amontoando tudo no mesmo ENDPOINT
+01 - Recursos - As coisas estão um pouco mais organizadas. (geralmente só usa get e post)
+02 - HTTPS VERBS - usa os 04 principais
+03 - Uso de Hypermidia Controls
+	
