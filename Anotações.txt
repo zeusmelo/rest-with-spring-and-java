@@ -57,4 +57,19 @@ Restfull - Estado mais alto do REST
 01 - Recursos - As coisas estão um pouco mais organizadas. (geralmente só usa get e post)
 02 - HTTPS VERBS - usa os 04 principais
 03 - Uso de Hypermidia Controls
+
+
+-------------------------
+
+problemas: causedby
+
+-------------
+
+queryparams = opcional ?
+
+pathparams = obrigatório /
+
+quando não especifica = padrão GET
+
+
 	
